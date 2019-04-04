@@ -39,7 +39,7 @@ def save_page(title, header, paragraphs, output="index.html"):
 today = dt.now().date()
 save_page(
     title="Гороскоп на сегодня",
-    header="Что день " + str(today) + " готовит",
+    header="Ваши предсказания на " + str(today),
     paragraphs=generate_prophecies(),
 )
 
