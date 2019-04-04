@@ -20,7 +20,7 @@ def generate_body(header):
     body = f"<h1>{header}</h1>"
     time_list = ""
     for time in horoscope.times:
-        time_list += f"<li>{time.capitalize()}.</li>"
+        time_list += f"<li>{time.capitalize()};</li>"
     times = f"<b>Времена дня:</b><ul>{time_list}</ul>"
 
     advice_list = ""
