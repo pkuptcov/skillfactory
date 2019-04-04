@@ -16,7 +16,7 @@ def generate_prophecies(total_num=3, num_sentences=4):
             a = random.choice(advices)
             p = random.choice(promises)
 
-            full_sentence = f"{t.title()} {a} {p}."
+            full_sentence = f"{t.capitalize()} {a} {p}."
             if j != num_sentences - 1:
                 full_sentence = full_sentence + " "
 
