@@ -25,12 +25,12 @@ def generate_body(header):
 
     advice_list = ""
     for advice in horoscope.advices:
-        advice_list += f"<li>{advice};</li>"
+        advice_list += f"<li>{advice.capitalize()};</li>"
     advices = f"<b>Глаголы:</b><ul>{advice_list}</ul>"
 
     promise_list = ""
     for promise in horoscope.promises:
-        promise_list += f"<li>{promise};</li>"
+        promise_list += f"<li>{promise.capitalize()};</li>"
     promises = f"<b>Ожидания:</b><ul>{promise_list}</ul>"
 
     image = "<img src='crayfish.gif' height=100px width=100px />"
