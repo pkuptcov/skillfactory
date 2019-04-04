@@ -22,6 +22,7 @@ def generate_body(header, paragraphs):
     body = f"<h1>{header}</h1>"
     for p in paragraphs:
         body = body + f"<p>{p}</p>"
+    body += "<hr><a href='about.html'>О реализации</a>"
     return f"<body>{body}</body>"
 
 
